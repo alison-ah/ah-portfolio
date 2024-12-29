@@ -374,6 +374,10 @@ footer {
   width: 100%;
 }
 
+footer h2 {
+  text-align: center;
+}
+
 footer ul {
   justify-content: center;
 }
