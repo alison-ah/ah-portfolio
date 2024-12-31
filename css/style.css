@@ -133,8 +133,8 @@ figcaption {
 }
 
 img {
-  width: 100%;
   border-radius: 5px;
+  width: 100%;
   height: auto;
   align-self: center;
 }
@@ -289,8 +289,6 @@ nav ul li a:hover {
 
 #skills ul {
   gap: 1em;
-  width: 95%;
-  margin: 1em;
   list-style: disc;
 }
 
@@ -555,7 +553,7 @@ footer p {
   tr,
   img {
     page-break-inside: avoid;
-    width: 95%;
+    width: 350px;
   }
 
   p,
