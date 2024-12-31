@@ -103,7 +103,7 @@ textarea {
 html {
   display: flex;
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 body {
@@ -223,14 +223,12 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--secondary-color);
-  padding: .5em;
   margin: 0;
   width: 100%;
 }
 
 nav {
   background-color: var(--secondary-color);
-  padding: .5em;
   width: 100%;
   margin: 0;
   font-size: 1.125em;
@@ -285,7 +283,6 @@ nav ul li a:hover {
 #skills {
   background: var(--tertiary-color-4);
   color: var(--primary-color);
-  padding: .5em;
   margin: 0;
   width: 100%;
 }
@@ -369,7 +366,6 @@ footer {
   display: flex;
   justify-content: center;
   background-color: var(--secondary-color);
-  padding: .5em;
   margin: 0;
   width: 100%;
 }
@@ -559,7 +555,7 @@ footer p {
   tr,
   img {
     page-break-inside: avoid;
-    width: 350px;
+    width: 95%;
   }
 
   p,
