@@ -201,7 +201,7 @@ nav {
   background-color: var(--secondary-color);
   width: 100%;
   margin: 0;
-  padding: 15px 0;
+  padding: 0;
   font-size: 1.125em;
   font-weight: bold;
   text-transform: uppercase;
