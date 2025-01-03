@@ -117,7 +117,7 @@ a {
 
 h1 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: lighter;
   text-align: center;
 }
@@ -201,7 +201,7 @@ nav {
   background-color: var(--secondary-color);
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   font-size: 1.125em;
   font-weight: bold;
   text-transform: uppercase;
@@ -219,7 +219,7 @@ nav ul {
 
 nav ul li {
   font-family: "Caveat", Arial, Helvetica, sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 nav ul li a {
@@ -416,6 +416,14 @@ footer p {
   }
 
 @media only screen and (min-width: 768px) {
+
+  h1 {
+    font-size: 1.75em;
+  }
+
+  nav ul li {
+    font-size: 1.5em;
+  }
 
   #about .content-wrapper {
     justify-content: space-around;
