@@ -436,10 +436,11 @@ footer p {
   #projects .text {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   
   .project {
-    width: 46%;
+    width: 42%;
   }
 
 }
