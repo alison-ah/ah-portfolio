@@ -98,6 +98,7 @@ figure {
 }
 
 figcaption {
+  display: flex;
   color: var(--primary-color);
   font-size: .85em;
   font-style: italic;
