@@ -1,3 +1,12 @@
+#Portfolio Site
+This portfolio site was created to showcase my web development skills, with a strong focus on clean code, responsive design, and digital accessibility best practices.
+
+<img src="img/alison-ah.github.io_ah-portfolio_.png.png" alt="preview of portfolio site"></a>
+
+##Acknowledgements
+This site was originally developed as the final project of my Skillcrush Full Stack Development training, with guidance from their Get Hired program on best practices for portfolio content. It was later updated following the completion of their WordPress Development courses.
+
+
 Developed with portions of the HTML5 Boilerplate.
 
 Copyright (c) HTML5 Boilerplate
