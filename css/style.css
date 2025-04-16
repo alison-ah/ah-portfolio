@@ -313,6 +313,10 @@ nav ul li a:hover {
   list-style: disc;
 }
 
+.links {
+  margin-top: auto;
+}
+
 .button {
   display: flex;
   font-size: 1.15em;
