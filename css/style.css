@@ -10,6 +10,9 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  max-width: 2000px;
+  align-content: center;
+  margin: auto;
 }
 
 ::-moz-selection {
@@ -95,6 +98,8 @@ figure {
   justify-content: center;
   margin: 0;
   padding: 0 10px 20px 10px;
+  max-width: 500px;
+  height: auto;
 }
 
 figcaption {
@@ -438,6 +443,18 @@ footer p {
     flex-direction: row-reverse;
   }
 
+  #skills {
+    display: flex;
+  }
+
+  .skills-list {
+    width: 55%;
+  }
+
+  .expertise {
+    width: 40%;
+  }
+
   #projects .text {
     display: flex;
     flex-wrap: wrap;
@@ -459,6 +476,14 @@ footer p {
   
   #about .text {
     width: 60%;
+  }
+
+  .skills-list {
+    width: 70%;
+  }
+
+  .expertise {
+    width: 25%;
   }
   
   #projects .text {
