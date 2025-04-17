@@ -94,6 +94,7 @@ ol {
 }
 
 figure {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
@@ -115,7 +116,6 @@ img {
   border-radius: 5px;
   width: 100%;
   height: auto;
-  align-self: center;
 }
 
 a {
@@ -445,6 +445,7 @@ footer p {
 
   #skills {
     display: flex;
+    justify-content: space-around;
   }
 
   .skills-list {
@@ -471,6 +472,17 @@ footer p {
   }  
 
 }
+@media only screen and (min-width: 1200px) {
+
+  .skills-list {
+    width: 70%;
+  }
+
+  .expertise {
+    width: 25%;
+  }
+
+}
 
 @media only screen and (min-width: 1522px) {
   
@@ -479,11 +491,11 @@ footer p {
   }
 
   .skills-list {
-    width: 70%;
+    width: 80%;
   }
 
   .expertise {
-    width: 25%;
+    width: 20%;
   }
   
   #projects .text {
