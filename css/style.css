@@ -262,7 +262,8 @@ nav ul li a:hover {
 #about figure {
   justify-content: right;
   padding: 10px 20px;
-  margin: 0 25px;
+  margin: 25px auto;
+  max-width: 300px;
 }
 
 #about ul {
@@ -449,7 +450,6 @@ footer p {
   #about .content-wrapper {
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
     flex-direction: row-reverse;
   }
 
@@ -459,7 +459,7 @@ footer p {
   }
 
   .skills-list {
-    width: 60%;
+    width: 70%;
   }
 
   #projects .text {
@@ -481,8 +481,10 @@ footer p {
 
 @media only screen and (min-width: 1522px) {
 
-  #about .text {
-    width: 66%;
+  #about .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
   }
   
   #projects .text {
