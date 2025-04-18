@@ -10,9 +10,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  max-width: 2000px;
-  align-content: center;
-  margin: auto;
 }
 
 ::-moz-selection {
@@ -97,7 +94,7 @@ figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: auto;
   padding: 0 10px 20px 10px;
   max-width: 500px;
   height: auto;
@@ -160,9 +157,12 @@ h5 {
 }
 
 .content-wrapper {
-  flex-wrap: wrap;
   margin: 0;
   padding: 0.1em 1.5em 1.5em 1.5em;
+  max-width: 2000px;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #goToTopButton {
@@ -223,6 +223,9 @@ nav ul {
   justify-content: space-around;
   margin-block-start: 1em;
   margin-top: 0;
+  max-width: 2000px;
+  align-content: center;
+  margin: auto;
 }
 
 nav ul li {
@@ -247,9 +250,9 @@ nav ul li a:hover {
 
 #about .content-wrapper {
   background-color: white;
-  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.6px 48px;
 }
 
 #about .text {
@@ -258,6 +261,8 @@ nav ul li a:hover {
 
 #about figure {
   justify-content: right;
+  padding: 10px 20px;
+  margin: 0 25px;
 }
 
 #about ul {
@@ -279,6 +284,10 @@ nav ul li a:hover {
 #skills ul span {
   font-size: 1.25em;
   font-weight: bold;
+}
+
+.expertise figure {
+  padding: 0;
 }
 
 #projects {
@@ -438,22 +447,19 @@ footer p {
   }
 
   #about .content-wrapper {
+    display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
   }
 
-  #skills {
+  .skills-and-expertise {
     display: flex;
     justify-content: space-around;
   }
 
   .skills-list {
-    width: 55%;
-  }
-
-  .expertise {
-    width: 40%;
+    width: 60%;
   }
 
   #projects .text {
@@ -472,30 +478,11 @@ footer p {
   }  
 
 }
-@media only screen and (min-width: 1200px) {
-
-  .skills-list {
-    width: 70%;
-  }
-
-  .expertise {
-    width: 25%;
-  }
-
-}
 
 @media only screen and (min-width: 1522px) {
-  
+
   #about .text {
-    width: 60%;
-  }
-
-  .skills-list {
-    width: 80%;
-  }
-
-  .expertise {
-    width: 20%;
+    width: 66%;
   }
   
   #projects .text {
@@ -508,7 +495,7 @@ footer p {
   }
 
   figure {
-    padding: 10px 20px 30px 20px;
+    padding: 2em;
   }
 
 }
