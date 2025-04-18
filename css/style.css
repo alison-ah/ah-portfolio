@@ -287,12 +287,53 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.expertise figure {
-  padding: 0;
+.expertise-topics {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2em;
+  justify-content: left;
+}
+
+.guide {
+  padding: 0.5em 2em;
+  background-color: var(--darker-primary-color);
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.expertise h3 {
+  color: white;
+  font-size: 1.25em;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+.expertise h3 span {
+  font-family: "Caveat", Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  line-height: 1em;
+  padding-bottom: 2em;
+}
+
+.expertise-topic {
+  padding: 0.5em 2em;
+  background-color: var(--tertiary-color-1);
+  max-height: 300px;
+  width: auto;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 2em;
 }
 
 #projects {
   background-color: white;
+}
+
+#projects h2 {
+  padding: 0.5em 0.5em 0;
 }
 
 #projects .text {
@@ -453,13 +494,22 @@ footer p {
     flex-direction: row-reverse;
   }
 
-  .skills-and-expertise {
+  .expertise-topics {
     display: flex;
-    justify-content: space-around;
+    column-gap: 2em;
+    justify-content: left;
   }
 
-  .skills-list {
-    width: 70%;
+  .guide {
+    width: 300px;
+    height: 448px;
+    margin-left: 1em;
+  }
+
+  .expertise-topic {
+    margin-left: 1em;
+    width: 300px;
+    height: 200px;
   }
 
   #projects .text {
@@ -479,12 +529,45 @@ footer p {
 
 }
 
+@media only screen and (min-width: 1200px) {
+
+  #about .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding-left: 3em;
+  }
+
+  .guide {
+    height: 425px;
+  }
+
+  .skills-and-expertise {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .expertise-topics {
+    display: flex;
+    column-gap: 2em;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .expertise-topic {
+    margin-bottom: 0.55em;
+    padding: 0.5em 2em;
+  }
+  
+}
+
 @media only screen and (min-width: 1522px) {
 
   #about .content-wrapper {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+    padding-left: 5em;
   }
   
   #projects .text {
