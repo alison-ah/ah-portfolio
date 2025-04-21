@@ -91,10 +91,13 @@ ol {
 }
 
 figure {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 10px 20px 10px;
+  max-width: 500px;
+  height: auto;
 }
 
 figcaption {
@@ -110,7 +113,6 @@ img {
   border-radius: 5px;
   width: 100%;
   height: auto;
-  align-self: center;
 }
 
 a {
@@ -155,9 +157,12 @@ h5 {
 }
 
 .content-wrapper {
-  flex-wrap: wrap;
   margin: 0;
   padding: 0.1em 1.5em 1.5em 1.5em;
+  max-width: 2000px;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #goToTopButton {
@@ -218,6 +223,9 @@ nav ul {
   justify-content: space-around;
   margin-block-start: 1em;
   margin-top: 0;
+  max-width: 2000px;
+  align-content: center;
+  margin: auto;
 }
 
 nav ul li {
@@ -242,9 +250,9 @@ nav ul li a:hover {
 
 #about .content-wrapper {
   background-color: white;
-  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.6px 48px;
 }
 
 #about .text {
@@ -253,6 +261,9 @@ nav ul li a:hover {
 
 #about figure {
   justify-content: right;
+  padding: 10px 20px;
+  margin: 25px auto;
+  max-width: 300px;
 }
 
 #about ul {
@@ -274,6 +285,10 @@ nav ul li a:hover {
 #skills ul span {
   font-size: 1.25em;
   font-weight: bold;
+}
+
+.expertise figure {
+  padding: 0;
 }
 
 #projects {
@@ -433,9 +448,18 @@ footer p {
   }
 
   #about .content-wrapper {
+    display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
     flex-direction: row-reverse;
+  }
+
+  .skills-and-expertise {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .skills-list {
+    width: 70%;
   }
 
   #projects .text {
@@ -456,9 +480,11 @@ footer p {
 }
 
 @media only screen and (min-width: 1522px) {
-  
-  #about .text {
-    width: 60%;
+
+  #about .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
   }
   
   #projects .text {
@@ -471,7 +497,7 @@ footer p {
   }
 
   figure {
-    padding: 10px 20px 30px 20px;
+    padding: 2em;
   }
 
 }
