@@ -162,7 +162,6 @@ h5 {
   max-width: 2000px;
   justify-content: center;
   margin-right: auto;
-  margin-left: auto;
 }
 
 #goToTopButton {
@@ -289,6 +288,10 @@ nav ul li a:hover {
 
 .expertise figure {
   padding: 0;
+}
+
+.content-wrapper-projects {
+  padding: 0.2em 3em 3em 3em;
 }
 
 #projects {
