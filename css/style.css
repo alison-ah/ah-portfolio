@@ -458,10 +458,6 @@ footer p {
     justify-content: space-around;
   }
 
-  .skills-list {
-    width: 70%;
-  }
-
   #projects .text {
     display: flex;
     flex-wrap: wrap;
