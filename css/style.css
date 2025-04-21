@@ -293,12 +293,12 @@ nav ul li a:hover {
   padding: 0;
 }
 
-#projects.content-wrapper-projects {
-  padding: 0.2em 3em 3em 3em;
-}
-
 #projects {
   background-color: white;
+}
+
+#projects h2 {
+  padding-left: 0.5em;
 }
 
 #projects .text {
