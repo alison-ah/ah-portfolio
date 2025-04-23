@@ -456,11 +456,6 @@ footer p {
     flex-direction: row-reverse;
   }
 
-  .skills-and-expertise {
-    display: flex;
-    justify-content: space-around;
-  }
-
   #projects .text {
     display: flex;
     flex-wrap: wrap;
