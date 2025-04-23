@@ -279,9 +279,14 @@ nav ul li a:hover {
   width: 100%;
 }
 
+#skills h2 {
+  padding-left: 0.5em;
+}
+
 #skills ul {
   gap: 1em;
   list-style: disc;
+  margin-left: 2em;
 }
 
 #skills ul span {
@@ -298,7 +303,7 @@ nav ul li a:hover {
   margin-bottom: 0.5em;
 }
 
-#projects .text {
+#projects .content {
   justify-content: space-between;
   gap: 1em;
 }
@@ -456,12 +461,7 @@ footer p {
     flex-direction: row-reverse;
   }
 
-  .skills-and-expertise {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #projects .text {
+  #projects .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -486,7 +486,7 @@ footer p {
     flex-direction: row-reverse;
   }
   
-  #projects .text {
+  #projects .content {
     display: flex;
     flex-wrap: nowrap;
   }
