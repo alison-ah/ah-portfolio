@@ -261,6 +261,10 @@ nav ul li a:hover {
   width: 100%;
 }
 
+#about h2 {
+  line-height: 1em;
+}
+
 #about figure {
   justify-content: right;
   padding: 10px 20px;
