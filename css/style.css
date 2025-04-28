@@ -133,7 +133,7 @@ h1 {
 h2 {
   font-family: "Caveat", Arial, Helvetica, sans-serif;
   font-size: 3em;
-  line-height: .5em;
+  line-height: 1em;
 }
 
 h3 {
@@ -160,8 +160,7 @@ h5 {
 }
 
 .content-wrapper {
-  margin: 0;
-  padding: 0.1em 1.5em 1.5em 1.5em;
+  margin: 0.1em 1.5em 1.5em 1.5em;
   max-width: 2000px;
   justify-content: center;
   margin-right: auto;
@@ -250,6 +249,14 @@ nav ul li a:hover {
 
 /*-- Section Styles --*/
 
+#intro h2 {
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+}
+
+#intro p {
+  font-size: 1.5em;
+}
+
 #about .content-wrapper {
   background-color: white;
   justify-content: center;
@@ -285,6 +292,99 @@ nav ul li a:hover {
 
 #skills h2 {
   padding-left: 0.5em;
+}
+
+#questions {
+  background: var(--tertiary-color-4);
+  color: var(--primary-color);
+  margin: 0;
+  width: 100%;
+}
+
+#questions h2 {
+  padding-left: 0.5em;
+  padding-top: 1em;
+}
+
+#questions span {
+  text-decoration: underline;
+}
+
+details {
+  background: none;
+  width: 90%;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1.75em;
+  text-align: left;
+  padding: 0;
+  padding-right: 3em;
+  padding-bottom: 1.5em;
+  margin: 0 2em;
+}
+
+summary {
+  list-style: none;
+  display: flex;
+  font-size: 1.2em;
+  font-family: "Hinid", sans-serif;
+  border: none;
+  border-top: solid lightgray 1px;
+  text-align: left;
+  padding-top: 1.5em;
+  padding-left: 2em;
+  cursor: pointer;
+  font-weight: bold;
+  gap: 0.5em;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  position: relative;
+}
+
+summary::marker {
+  content: none;
+}
+
+summary::before,
+summary::after {
+  content: '';
+}
+
+summary::before,
+summary::after {
+  width: .75em;
+  height: 0;
+  border-bottom: 2px solid;
+  position: absolute;
+  top: 2.15em;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+summary::after {
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+
+[open] summary::after {
+  transform: rotate(0deg);
+}
+
+details :hover {
+  color: var(--hover-text-on-light);
+  cursor: pointer;
+}
+
+.attribution :hover {
+  color: var(--hover-text-on-dark);
+  cursor: pointer;
 }
 
 #skills ul {
@@ -465,6 +565,25 @@ footer p {
     flex-direction: row-reverse;
   }
 
+  .preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .preview h2 {
+    margin-bottom: 0;
+  }
+
+  .preview-item {
+    width: 42%;
+    margin-top: auto;
+  }
+
+  .preview-item-text {
+    height: 250px;
+  }
+
   #projects .content {
     display: flex;
     flex-wrap: wrap;
@@ -488,6 +607,10 @@ footer p {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+  }
+
+  .preview-item-text {
+    height: 150px;
   }
   
   #projects .content {

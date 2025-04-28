@@ -58,338 +58,90 @@
       <h1>Alison Holland, EdD | Web Developer</h1>
     </header>
 
-    <nav id="main">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section id="about">
+      <section>
         <div class="content-wrapper">
-          <figure id="alison">
-            <img
-              src="img/Alison.png"
-              alt="Headshot of Alison Holland"
-           >
-            <figcaption>Photo by Natalie Jennings</figcaption>
-          </figure>
-          <div class="text">
-            <h2>Hi, I’m Alison.</h2>
-            <h3>
-              I’m a web developer based in Minnesota with a background in online
-              learning design, research, and public service.
-            </h3> 
+          <div class="text" id="intro">
+            <h2>When websites don’t work for everyone, they frustrate and exclude.</h2>
             <p>
-              I love solving problems, simplifying complex issues, and creating
-              accessible digital experiences.
+              Tiny text, low-contrast colors, missing headings, or hard-to-use buttons can make it difficult—or impossible—for some people to use a site.
+            </p>
+            <h2>Accessibility builds trust and better experiences for all.</h2>
+            <p>
+              Accessible design helps people with disabilities, and it also makes things easier for everyone: people using search engines, translating content, or reading in bright sunlight.
             </p>
             <p>
-              Before transitioning to web development, I spent 15+ years in education and served as a County Commissioner. These
-              experiences helped me hone skills in systems thinking, clear communication, and collaborative problem-solving—skills I
-              now apply to creating intuitive, user-centered websites.
+              Accessible websites are easy to use so more people can and will keep coming back.
             </p>
-            <p>
-              One of my favorite (and coldest) days on the job was helping environmental scientists saw through ice to capture 360°
-              images of invasive watermilfoil for an educational program. I’m a lifelong learner and nature-lover, and I bring
-              curiosity and creativity into everything I do.
-            </p>
-            <p>
-              Whether I’m planning a new feature or writing clean, accessible code, my focus is always on making technology work
-              better for people.
-            </p>
-            <div class="social">
-              <ul>
-                <li>
-                  <a
-                    href="https://linkedin.com/in/andersonholland"
-                    target="_blank"
-                    ><i
-                      class="fa-brands fa-linkedin"
-                      title="View LinkedIn profile"
-                    ></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/alison-ah" target="_blank"
-                    ><i
-                      class="fa-brands fa-github"
-                      title="View GitHub profile"
-                    ></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://scholar.google.com/citations?hl=en&user=dTVgryYAAAAJ"
-                    target="_blank"
-                    ><i
-                      class="fa-brands fa-google-scholar"
-                      title="View Google Scholar profile"
-                    ></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+            <h2>I create websites and digital experiences that almost anyone can use and I teach others how to do the same.</h2>
+
+      </section>
+      <section>
+        <div class="content-wrapper" id="questions">
+          <h2>FAQs</h2>
+          
+          <div role="region" aria-label="FAQ accordion">
+            <details class = "first-item">
+              <summary>
+                How would I know if my website is accessible?
+              </summary>
+              <p>
+                Use free resources like <span><a href="https://wave.webaim.org/" target="_blank">AIM’s suite of WAVE® evaluation tools</a></span> to check for the most common digital accessibility issues.
+              </p>
+            </details>
+      
+            <details>
+              <summary>
+                What are the most common issues and how do I fix them?
+              </summary>
+              <p>
+                <span><a href="https://www.linkedin.com/posts/webaim_wcag-accessibility-activity-7317894604920414209-VdxQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAATRS3QBpyp2mEakh3xFbwlIVogeJUrXFDs" target="_blank">According to WebAIM</a></span>, “96% of all WCAG 2 errors detected fall into six categories: low contrast text, missing alternative text for images, missing form input labels, empty links, empty buttons, and missing document language. Addressing these issues would significantly improve accessibility across the web.”
+              </p>
+              <p>
+                I also created a <span><a href="https://docs.google.com/document/d/1TEFRRh0fFCkQ-1__eeJ5hvyDaXzPkQHNH7pIFSQYr5c/edit?usp=sharing" target="_blank">Accessibility Guide for New Developers</a></span> after spotting many similar issues in developer portfolios. 
+              </p>
+            </details>
+      
+            <details>
+              <summary>
+                Do you build new websites, or just fix accessibility issues on existing ones?
+              </summary>
+              <p>
+                I do both. I offer full-site builds with accessibility baked in from the start, or I can jump into an existing project to improve accessibility without starting over. Whether you’re launching something new or making what you have better, I can help.
+              </p>
+            </details>
+      
+            <details>
+              <summary>
+                What’s your approach to web development beyond accessibility?
+              </summary>
+              <p>
+                Clean, maintainable code. User-first design. Tools and content that are easy to keep up-to-date. I build with long-term usability in mind—not just for end users, but for the people managing the site behind the scenes.
+              </p>
+            </button>
           </div>
         </div>
       </section>
-      <div id="skills-and-projects">
-        <section id="skills">
-          <div class="content-wrapper">
-            <h2>Skills</h2>
-            <ul>
-              <li>
-                <span>Front-end technologies</span> including responsive,
-                mobile-first design and accessibility practices (HTML5, CSS3,
-                JavaScript, Media Queries, Content Management Systems)
-              </li>
-              <li>
-                <span>Back-end development</span> including Object-Oriented
-                Programming (Python) and database integration (SQL, Jinja,
-                PHP)
-              </li>
-              <li><span>Version control</span> (Git, GitHub)</li>
-              <li><span>Web frameworks</span> (React, Flask)</li>
-              <li>
-                <span>API development and integration</span> including CRUD
-                operations (REST, RESTful)
-              </li>
-              <li>
-                <span>Learning design</span> and learning management systems
-                (Canvas, Moodle), including knowledge of UI/UX design
-              </li>
-              <li>
-                <span>Quantitative and qualitative research</span> including
-                survey design (Qualtrics), usability testing, focus groups,
-                and data analysis and visualization
-              </li>
-              <li>
-                <span>Plain language writing</span>, break downing complex
-                topics and turning jargon into plain language
-              </li>
-              <li>
-                <span>Standard office software</span> (Microsoft Office,
-                Google Suite, Canva)
-              </li>
-            </ul>
+      <section class="preview">
+        <div class="content-wrapper preview-item" id="services-preview">
+          <div class="preview-item-text">
+            <h2>Accessible Websites</h2>
+            <p>
+              I help small teams and solo site owners build and maintain websites that work for everyone. Whether you’re managing your own site or supporting others, I offer practical, approachable support to help you close the accessibility gap—one thoughtful step at a time.
+            </p>
           </div>
-        </section>
-
-        <section id="projects">
-          <div class="content-wrapper">
-            <h2>Projects</h2>
-            <div class="content-wrapper content">
-              <article class="project">
-                <h3>
-                  <strong>AI Prompt Builder Powered by React</strong><br><i>PromptAlchemy: A Chingu team project</i>
-                </h3>
-                <figure>
-                  <a href="https://promptalchemy-gemini.netlify.app/" target="_blank" aria-hidden="true">
-                    <img src="img/promptalchemy.png" alt="preview of PromptAlchemy app"></a>
-                </figure>
-                <h4>Skills</h4>
-                <ul>
-                  <li>Utilization of HTML, CSS, and React.js</li>
-                  <li>Implementation of Google Gemini API</li>
-                  <li>
-                    Collaborative development on a remote team using agile
-                    practices, including both solo and pair programming
-                  </li>
-                  <li>Application of accessible design practices</li>
-                </ul>
-                <h4>Tools</h4>
-                <ul>
-                  <li>React + Vite</li>
-                  <li>Google Gemini API</li>
-                  <li>Netlify</li>
-                  <li>Figma</li>
-                  <li>Chrome DevTools</li>
-                  <li>GitHub Repository and Projects</li>
-                </ul>
-                <h4>Description</h4>
-                <p>
-                  This app was created through a
-                  <span><a href="https://chingu.io" target="_blank">Chingu</a></span>
-                  tier 1 voyage. As a team, we built a web application,
-                  PromptAlchemy, which lets its users become more effective at
-                  building AI prompts.
-                </p>
-                <p>
-                  It follows a structured methodology called a
-                  <span><a
-                      href="https://ai.plainenglish.io/prompt-engineering-with-pentagram-framework-persona-context-task-output-and-constraint-3717b0733578"
-                      target="_blank">Pentagram</a></span>
-                  to help the user build good prompts, test them, and learn to
-                  improve on them along the way.
-                </p>
-                <p>
-                  I led the implementation of accessibility best practices and
-                  applied design styles to ensure an intuitive and inclusive
-                  user experience.
-                </p>
-                <div class="links">
-                  <a class="button" href="https://promptalchemy-gemini.netlify.app/" target="_blank"
-                    aria-label="View PromptAlchemy site">View Site</a>
-                  <a class="button" href="https://github.com/chingu-voyages/V54-tier1-team-02?tab=readme-ov-file"
-                    target="_blank" aria-label="View PromptAlchemy code">View Code</a>
-                </div>
-              </article>
-        
-              <article class="project">
-                <h3>
-                  <strong>Custom WordPress Development</strong><br><i>Fictional Marketing Agency</i>
-                </h3>
-                <figure>
-                  <a href="https://alisonh23.sg-host.com/" target="_blank" aria-hidden="true">
-                    <img src="img/accelerate_wordpress.png" alt="preview of Accelerate WordPress site"></a>
-                </figure>
-                <h4>Skills</h4>
-                <ul>
-                  <li>Utilization of HTML and CSS</li>
-                  <li>
-                    PHP development of WordPress Custom Themes, Child Themes,
-                    and advanced theme customizations
-                  </li>
-                  <li>
-                    Work flows utilizing local development, stage, and
-                    production environments
-                  </li>
-                  <li>Application of accessible design practices</li>
-                  <li>Editing and updating existing websites</li>
-                </ul>
-                <h4>Tools</h4>
-                <ul>
-                  <li>MySQL</li>
-                  <li>WordPress</li>
-                  <li>Plugins</li>
-                  <li>Visual Studio Code</li>
-                  <li>GitHub Repository</li>
-                  <li>SiteGround</li>
-                </ul>
-                <h4>Description</h4>
-                <p>
-                  This is a custom WordPress site developed for a Skillcrush
-                  course. I customized the project by implementing a
-                  mobile-first strategy and adding customer quotes on the
-                  homepage, replacing a Twitter feed in the original design.
-                </p>
-        
-                <div class="links">
-                  <a class="button" href="https://alisonh23.sg-host.com/" target="_blank"
-                    aria-label="View custom WordPress site">View Site</a>
-                  <a class="button" href="https://github.com/alison-ah/accelerate-marketing-wp/tree/main" target="_blank"
-                    aria-label="View custom WordPress code">View Code</a>
-                </div>
-              </article>
-        
-              <article class="project">
-                <h3>
-                  <strong>Full Stack Collection App</strong><br><i>Family library card catalog</i>
-                </h3>
-                <figure>
-                  <a href="https://family-library-app.replit.app/" target="_blank" aria-hidden="true">
-                    <img src="img/family_library_app.png" alt="preview of family library app"></a>
-                </figure>
-                <h4>Skills</h4>
-                <ul>
-                  <li>Utilization of HTML, CSS, and JavaScript</li>
-                  <li>
-                    Development of RESTful API routes and a SQL database with
-                    Flask in Python
-                  </li>
-                  <li>Application of accessible design practices</li>
-                  <li>
-                    Updating and adapting legacy code, leveraging AI
-                    assistance for learning and troubleshooting
-                  </li>
-                </ul>
-                <h4>Tools</h4>
-                <ul>
-                  <li>Replit</li>
-                  <li>Chrome DevTools</li>
-                  <li>Accessibility, HTML, and CSS validators</li>
-                </ul>
-        
-                <h4>Description</h4>
-                <p>
-                  The Family Library app allows you to add, edit, and delete
-                  books with a REST API so you can organize your collection
-                  with a basic “card catalog.” You can also search by title or
-                  author. It was built and deployed on Replit. It is an
-                  iteration on the
-                  <span><a
-                      href="https://replit.com/@alison-ah/Female-supervillain-trading-card-app-REST-API-version?v=1#main.py"
-                      target="_blank">female supervillain trading card app</a></span>
-                  and
-                  <span><a href="https://github.com/alison-ah/recipe-app" target="_blank">recipe app</a></span>
-                  Skillcrush projects.
-                </p>
-                <p>
-                  During the COVID lock down, I organized our family’s book
-                  collection with a library-like format. This app can take
-                  that project to another level.
-                </p>
-                <div class="links">
-                  <a class="button" href="https://family-library-app.replit.app/" target="_blank"
-                    aria-label="View family library app site">View Site</a>
-                  <a class="button" href="https://replit.com/@alison-ah/Family-Library-App-REST-API" target="_blank"
-                    aria-label="View family library app code">View Code</a>
-                </div>
-              </article>
-        
-              <article class="project">
-                <h3>
-                  <strong>React App with Filters</strong><br><i>Resource list for learning to code</i>
-                </h3>
-                <figure>
-                  <a href="https://learning-to-code-resource-list.netlify.app/" target="_blank" aria-hidden="true">
-                    <img src="img/learning_to_code_resource_list.png" alt="preview of resource list"></a>
-                </figure>
-                <h4>Skills</h4>
-                <ul>
-                  <li>Utilization of HTML, CSS, and React.js</li>
-                  <li>Image editing</li>
-                  <li>Application of accessible design practices</li>
-                  <li>Updating and adapting legacy code</li>
-                </ul>
-                <h4>Tools</h4>
-                <ul>
-                  <li>CodeSandbox</li>
-                  <li>GitHub Repository</li>
-                  <li>Netlify</li>
-                  <li>Canva</li>
-                  <li>Chrome DevTools</li>
-                  <li>Accessibility and CSS validators</li>
-                </ul>
-                <h4>Description</h4>
-                <p>
-                  This resource list allows you to filter by type. It was
-                  built in CodeSandbox with JavaScript React and image icons
-                  created in Canva. Then it was saved to GitHub and deployed
-                  on Netlify.
-                </p>
-                <p>
-                  Noticing the challenge of sharing resources with Skillcrush
-                  students in the company’s Slack channel, I decided to
-                  augment a
-                  <span><a href="https://codesandbox.io/p/sandbox/funny-tamas-lscpky" target="_blank">course project that
-                      filtered hotel rooms</a></span>
-                  to share resources for learning to code.
-                </p>
-                <div class="links">
-                  <a class="button" href="https://learning-to-code-resource-list.netlify.app/" target="_blank"
-                    aria-label="View resource list site">View Site</a>
-                  <a class="button" href="https://github.com/alison-ah/learning-to-code-resource-list-with-filter"
-                    target="_blank" aria-label="View resource list code">View Code</a>
-                </div>
-              </article>
-            </div>
+          <a class="button" href="services/index.html" aria-label="My Services Page">Explore My Services</a>
+        </div>
+        <div class="content-wrapper preview-item" id="portfolio-preview">
+          <div class="preview-item-text">
+            <h2>Collaborative Development</h2>
+            <p>
+              Looking to partner or grow your team? I’m seeking opportunities to contribute to meaningful projects where I can help make technology work better for people—through clear code, accessible design, and thoughtful communication.
+            </p>
           </div>
-        </section>
-      </div>
+          <a class="button" href="portfolio/index.html" aria-label="My Portfolio Page">View My Portfolio</a>
+        </div>
+      </section>
     </main>
 
     <footer>
