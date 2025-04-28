@@ -134,6 +134,7 @@ h2 {
   font-family: "Caveat", Arial, Helvetica, sans-serif;
   font-size: 3em;
   line-height: 1em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
@@ -290,6 +291,8 @@ nav ul li a:hover {
   color: var(--primary-color);
   margin: 0;
   width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #skills h2 {
