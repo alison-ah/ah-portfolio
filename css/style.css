@@ -251,10 +251,11 @@ nav ul li a:hover {
 
 #intro h2 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 #intro p {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 #about .content-wrapper {
@@ -305,7 +306,7 @@ nav ul li a:hover {
 
 #questions h2 {
   padding-left: 0.5em;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 #questions span {
@@ -571,6 +572,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    column-gap: 3em;
   }
 
   .preview h2 {
@@ -578,12 +580,12 @@ footer p {
   }
 
   .preview-item {
-    width: 42%;
+    width: 40%;
     margin-top: auto;
   }
 
   .preview-item-text {
-    height: 250px;
+    height: 275px;
   }
 
   #projects .content {
@@ -603,12 +605,27 @@ footer p {
 
 }
 
+@media only screen and (min-width: 992px) {
+
+  .preview-item {
+    width: 41%;
+  }
+
+  .preview-item-text {
+    height: 220px;
+  }
+}
+
 @media only screen and (min-width: 1522px) {
 
   #about .content-wrapper {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+  }
+
+  .preview-item {
+    width: 45%;
   }
 
   .preview-item-text {
