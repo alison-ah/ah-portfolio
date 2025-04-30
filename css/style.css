@@ -204,11 +204,17 @@ header {
   background-color: var(--secondary-color);
   margin: 0;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  padding-left: 1em;
 }
 
 nav {
   background-color: var(--secondary-color);
-  width: 100%;
+  width: 30%;
   margin: 0;
   padding: 15px 0;
   font-size: 1.125em;
@@ -221,6 +227,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-block-start: 1em;
   margin-top: 0;
@@ -252,6 +259,12 @@ nav ul li a:hover {
 #intro h2 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
   font-size: 2em;
+}
+
+#intro h3 {
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.75m;
 }
 
 #intro p {
@@ -567,6 +580,11 @@ footer p {
     flex-direction: row-reverse;
   }
 
+  #questions {
+    width: 80%;
+    justify-self: center;
+  }
+
   .preview {
     display: flex;
     flex-wrap: wrap;
@@ -621,6 +639,11 @@ footer p {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
+  }
+
+  #questions {
+    width: 50%;
+    justify-self: center;
   }
 
   .preview-item {
