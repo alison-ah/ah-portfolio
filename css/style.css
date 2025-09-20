@@ -159,6 +159,20 @@ h5 {
   margin: 1em 0em 0em 0em;
 }
 
+p {
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight:normal;
+  margin: 0.5em 0em;
+}
+
+p.callout {
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight:normal;
+  margin: 0.5em 0em;
+}
+
 .content-wrapper {
   margin: 0;
   padding: 0.1em 1.5em 1.5em 1.5em;
