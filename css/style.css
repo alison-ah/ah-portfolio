@@ -500,6 +500,12 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  #projects .content.single {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
   
   .project {
     width: 42%;
