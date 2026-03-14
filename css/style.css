@@ -8,7 +8,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -27,7 +27,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -67,6 +67,8 @@ textarea {
   --tertiary-color-2: #eab555;
   --tertiary-color-3: #92412e;
   --tertiary-color-4: #f0eadc;
+
+  --focus-outline-color: var(--highlight-color);
 }
   
    /*-- Base Styles --*/
@@ -90,7 +92,7 @@ ul,
 ol {
   list-style-type: none;
   margin: 0;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 figure {
@@ -106,7 +108,7 @@ figure {
 figcaption {
   display: flex;
   color: var(--primary-color);
-  font-size: .85em;
+  font-size: .85rem;
   font-style: italic;
   justify-content: right;
 }
@@ -123,57 +125,82 @@ a {
   color: var(--primary-color);
 }
 
+:focus {
+  outline: 3px solid var(--focus-outline-color); /* Outlined focus */
+  outline-offset: 2px; /* Space between the outline and the element */
+}
+
+/* Focus style for buttons */
+button:focus,
+a:focus {
+  border: 2px solid var(--border-color);
+  color: var(--highlight-color); /* Set text color to highlight */
+}
+
+/* Focus style for input fields */
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid var(--tertiary-color-2); /* Tertiary color for input focus */
+}
+
+/* Specific focus styles for links */
+a:focus {
+  text-decoration: underline; /* Underline to indicate focus */
+  color: var(--tertiary-color-1); /* Change link color on focus */
+}
+
 h1 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: lighter;
   text-align: center;
 }
 
 h2 {
   font-family: "Caveat", Arial, Helvetica, sans-serif;
-  font-size: 3em;
-  line-height: .5em;
+  font-size: 3rem;
+  line-height: 2rem;
 }
 
 h3 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight:normal;
-  margin: 0.5em 0em;
-  padding-left: 1em;
+  margin: 0.5rem 0rem;
+  padding-left: 1rem;
 }
 
 h4 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.35rem;
   font-weight:normal;
-  margin: 0.5em 0em;
+  margin: 0.5rem 0rem;
   text-wrap: pretty;
 }
 
 h5 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1.15em;
+  font-size: 1.15rem;
   font-weight:600;
-  line-height: .1em;
-  margin: 1em 0em 0.5em 0em;
+  line-height: .1rem;
+  margin: 2rem 0rem 1rem 0rem;
   text-wrap: pretty;
 }
 
 h6 {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight:600;
-  line-height: 1em;
-  margin: 1em 0em 0em 0em;
+  line-height: 1rem;
+  margin: 1rem 0rem 0rem 0rem;
 }
 
 p {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight:normal;
-  margin: 0.5em 0em;
+  margin: 0.5rem 0rem;
 }
 
 p.note {
@@ -183,57 +210,38 @@ p.note {
 
 p.callout {
   font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.2rem;
   font-weight:normal;
-  margin: 0.5em 0em;
+  margin: 0.5rem 0rem;
 }
 
 .content-wrapper {
   margin: 0;
-  padding: 0.1em 1.5em 1.5em 1.5em;
+  padding: 0.1rem 1.5rem 1.5rem 1.5rem;
   max-width: 2000px;
   justify-content: center;
   margin-right: auto;
 }
 
-#goToTopButton {
-  display: none;
-  position: fixed;
-  bottom: 1em;
-  right: 1.25em;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: var(--default-background-color);
-  color: var(--darker-primary-color);
-  cursor: pointer;
-  padding: .5em;
-  border-radius: 50%;
-  font-size: 1.75em;
-  font-weight: bold;
-}
-
-#goToTopButton:hover {
-  background-color: var(--darker-primary-color);
-  color: var(--default-background-color)
-}
-
 .social ul {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: .8em;
+  gap: .8rem;
   list-style-type: none;
 }
 
 /*-- Header Styles --*/
+.skip-link {
+  position: absolute;
+  left: -9999px; /* Hide it offscreen */
+}
 
-header {
-  display: flex;
-  justify-content: center;
-  background-color: var(--secondary-color);
-  margin: 0;
-  width: 100%;
+.skip-link:focus {
+  left: 0;       /* Move it back into view when focused */
+  background: #fff; /* Optional styling */
+  padding: 8px;
+  z-index: 1000; /* Ensure it is on top */
 }
 
 nav {
@@ -241,7 +249,7 @@ nav {
   width: 100%;
   margin: 0;
   padding: 15px 0;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--primary-color);
@@ -252,7 +260,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
-  margin-block-start: 1em;
+  margin-block-start: 1rem;
   margin-top: 0;
   max-width: 2000px;
   align-content: center;
@@ -261,20 +269,20 @@ nav ul {
 
 nav ul li {
   font-family: "Caveat", Arial, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 nav ul li a {
   background-color: transparent;
-  border-radius: .5em;
-  padding: .5em;
+  border-radius: .5rem;
+  padding: .5rem;
 }
 
 nav ul li a:hover {
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  border-radius: .5em;
-  padding: .5em;
+  border-radius: .5rem;
+  padding: .5rem;
 }
 
 /*-- Section Styles --*/
@@ -282,7 +290,7 @@ nav ul li a:hover {
 #about .content-wrapper {
   background-color: white;
   justify-content: center;
-  align-items: center;
+  align-itrems: center;
   padding: 1.6px 48px;
 }
 
@@ -291,7 +299,7 @@ nav ul li a:hover {
 }
 
 #about h2 {
-  line-height: 1em;
+  line-height: 1rem;
 }
 
 #about figure {
@@ -302,7 +310,7 @@ nav ul li a:hover {
 }
 
 #about ul {
-  padding: 0.1em;
+  padding: 0.1rem;
 }
 
 #skills {
@@ -313,17 +321,17 @@ nav ul li a:hover {
 }
 
 #skills h2 {
-  padding-left: 0.5em;
+  padding-left: 0.5rem;
 }
 
 #skills ul {
-  gap: 1em;
+  gap: 1rem;
   list-style: disc;
-  margin-left: 2em;
+  margin-left: 2rem;
 }
 
 #skills ul span {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -332,13 +340,13 @@ nav ul li a:hover {
 }
 
 #projects h2 {
-  padding-left: 0.5em;
-  margin-bottom: 0.5em;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #projects .content {
   justify-content: space-between;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .project {
@@ -346,8 +354,8 @@ nav ul li a:hover {
   flex-direction: column;
   border-radius: 25px;
   border: 2px solid var(--border-color);
-  padding: 1em 1em;
-  margin: 2em 0em;
+  padding: 1rem 1rem;
+  margin: 2rem 0rem;
 }
 
 .project img {
@@ -363,39 +371,10 @@ nav ul li a:hover {
 }
 
 .project ul {
-  gap: 1em;
+  gap: 1rem;
   width: 90%;
-  margin: 1em;
+  margin: 1rem;
   list-style: disc;
-}
-
-.links {
-  margin-top: auto;
-  text-align: center;
-}
-
-.button {
-  display: flex;
-  font-size: 1.15em;
-  background-color: var(--tertiary-color-2);
-  border: none;
-  border-radius: 5px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-.button a {
-  text-decoration: none;
-}
-
-.button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /*-- Footer Styles --*/
@@ -418,9 +397,9 @@ footer ul {
 
 footer p {
   display: flex;
-  font-size: .9em;
+  font-size: .9rem;
   justify-content: center; 
-  line-height: .5em;
+  line-height: .5rem;
 }
 
 /* ==========================================================================
@@ -482,11 +461,17 @@ footer p {
 @media only screen and (min-width: 768px) {
 
   h1 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    margin: 0;
+    width: 100%;
+    padding-top: 1rem;
   }
 
   nav ul li {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   #about .content-wrapper {
@@ -512,8 +497,8 @@ footer p {
   }
 
   .social ul {
-    font-size: 3em;
-    gap: 1em;
+    font-size: 3rem;
+    gap: 1rem;
   }  
 
 }
@@ -529,12 +514,12 @@ footer p {
   #projects .content {
     display: flex;
     flex-wrap: nowrap;
-    align-items: stretch;
+    align-itrems: stretch;
   }
 
   .project {
     flex-direction: row;
-    align-items: flex-start;
+    align-itrems: flex-start;
     width: 48%;
   }
 
@@ -543,7 +528,7 @@ footer p {
   }
 
   .intro figure {
-    padding: 2em 1em;
+    padding: 2rem 1rem;
   }
 
   .description {
@@ -552,7 +537,7 @@ footer p {
   }
 
   figure {
-    padding: 2em;
+    padding: 2rem;
   }
 
 }
@@ -580,10 +565,14 @@ footer p {
     text-shadow: none !important;
   }
 
+  nav {
+    display: none;
+  }
+
   a,
   a:visited {
     text-decoration: underline;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   a[href]::after {
@@ -612,7 +601,7 @@ footer p {
   tr,
   img {
     page-break-inside: avoid;
-    width: 350px;
+    width: 250px;
   }
 
   p,
@@ -627,9 +616,28 @@ footer p {
     page-break-after: avoid;
   }
 
+  h2, h3 {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  #skills {
+    page-break-inside: avoid;
+  }
+
+  article.project {
+    margin: 0;
+    padding: 0;
+    page-break-inside: avoid;
+  }
+
   .social ul {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    font-size: 0.8rem;
+  }
+
+  .project {
+    border: none;
   }
 }
 }

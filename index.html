@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -30,23 +30,20 @@
 </head>
 
 <body>
-  <button onclick="topFunction()" id="goToTopButton" title="Go to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <header>
     <h1>Alison Holland, EdD | Web Developer</h1>
+
+    <nav id="main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav id="main">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <main>
     <section id="about">
       <div class="content-wrapper">
@@ -74,16 +71,19 @@
           <div class="social">
             <ul>
               <li>
-                <a href="https://linkedin.com/in/andersonholland" target="_blank" title="View LinkedIn profile" aria-label="View LinkedIn profile">
+                <a href="https://linkedin.com/in/andersonholland" target="_blank" title="View LinkedIn profile"
+                  aria-label="View LinkedIn profile">
                   <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/alison-ah" target="_blank" title="View GitHub profile" aria-label="View GitHub profile">
+                <a href="https://github.com/alison-ah" target="_blank" title="View GitHub profile"
+                  aria-label="View GitHub profile">
                   <i class="fa-brands fa-github" aria-hidden="true"></i></a>
               </li>
               <li>
-                <a href="https://scholar.google.com/citations?hl=en&user=dTVgryYAAAAJ" target="_blank" title="View Google Scholar profile" aria-label="View Google Scholar profile"><i
+                <a href="https://scholar.google.com/citations?hl=en&user=dTVgryYAAAAJ" target="_blank"
+                  title="View Google Scholar profile" aria-label="View Google Scholar profile"><i
                     class="fa-brands fa-google-scholar" aria-hidden="true"></i>
                 </a>
               </li>
@@ -130,7 +130,7 @@
               topics and turning jargon into plain language
             </li>
             <li>
-              <span>Strategic and systems thinking</span>, aligning technical work and 
+              <span>Strategic and systems thinking</span>, aligning technical work and
               daily tasks with business goals and cross-team collaboration
             </li>
             <li>
@@ -149,24 +149,19 @@
             <article class="project">
               <div class="intro">
                 <h4>
-                  <strong>Improved accessibility in legacy code</strong><br><i>Online giving tool</i>
+                  <strong>Improved accessibility in legacy code</strong>
                 </h4>
                 <figure>
-                  <a href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank" title="Visit the University of Minnesota's online giving tool">
+                  <a href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank"
+                    title="Visit the University of Minnesota's online giving tool">
                     <img src="img/makingagift.png"
                       alt="preview of the University of Minnesota's online giving tool"></a>
                 </figure>
-                <!-- <div class="links">
-                  <a class="button" href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank"
-                    aria-label="View University of Minnesota's online giving tool">View Site</a>
-                  <a class="button" href="" target="_blank" aria-label="View before and after code examples">View
-                    Code</a>
-                </div> -->
               </div>
               <div class="description">
                 <h5>Skills</h5>
                 <ul>
-                  <li>Accessibility testing</li>
+                  <li>Conducting both automated and manual accessibility testing</li>
                   <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
                   <li>Updating and adapting legacy code</li>
                 </ul>
@@ -184,9 +179,8 @@
                 <p>
                   Increased accessibility for the University of Minnesota's online giving tool,
                   improving PopeTech score from 6.7 to 9.8 (development site: 10) by
-                  modernizing legacy UI to comply with WCAG 2.2. Key enhancements included better keyboard navigation,
-                  ARIA
-                  implementations, and screen-reader support.
+                  modernizing legacy UI to comply with WCAG 2.2. Key enhancements included
+                  better keyboard navigation, ARIA implementations, and screen-reader support.
                 </p>
                 <p class="note">
                   Work is ongoing to make this site as accessible as possible.
@@ -197,24 +191,24 @@
             <article class="project">
               <div class="intro">
                 <h4>
-                  <strong>Developed custom appeal cart pages</strong><br><i>Elasticsearch API</i>
+                  <strong>Developed scalable custom appeal cart pages</strong>
                 </h4>
+                <p class="callout">
+
+                </p>
                 <figure>
-                  <a href="https://makingagift.umn.edu/give/customgift.html?pageType=AL&customid=2006&cart=1845" target="_blank" title="View one of the University of Minnesota Foundation's custom cart pages">
+                  <a href="https://makingagift.umn.edu/give/customgift.html?pageType=AL&customid=2006&cart=1845"
+                    target="_blank" title="View one of the University of Minnesota Foundation's custom cart pages">
                     <img src="img/custom-giving-ur.png"
                       alt="preview of the University of Minnesota's Urolith Center custom cart page"></a>
                 </figure>
-                <!-- <div class="links">
-                  <a class="button" href="" target="_blank" aria-label="View example custom cart page">View Site</a>
-                  <a class="button" href="" target="_blank" aria-label="View code examples">View Code</a>
-                </div> -->
               </div>
               <div class="description">
                 <h5>Skills</h5>
                 <ul>
                   <li>Development and utilization of Elasticsearch API</li>
                   <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
-                  <li>Building in legacy code system</li>
+                  <li>Working within a legacy codebase, leveraging existing jQuery design patterns</li>
                 </ul>
                 <h5>Tools</h5>
                 <ul>
@@ -226,63 +220,25 @@
                 </ul>
 
                 <h5>Description</h5>
-                <p>Developed custom appeal cart pages and designed Elasticsearch-backed API to enable scalable content
-                  workflows, while
-                  collaborating on cross-functional quality assurance processes.
+                <p>Developed custom appeal cart pages and an Elasticsearch-backed API, collaborating with
+                  cross-functional teams to
+                  establish a Quality Assurance (QA) workflow that supports scalability.
                 </p>
-                <!-- <p class="note">
-                  Example screenshot and link will be added after the project is deployed to the production server (estimated timeline: mid-Q1 2026).
-                </p> -->
               </div>
             </article>
           </div>
           <h3>Learning projects</h3>
           <div class="content-wrapper content single">
-            <!-- <article class="project">
-                <h4>
-                  <strong>Accessible components</strong><br><i>Codepen profile</i>
-                </h4>
-                <figure>
-                  <a href="" target="_blank" aria-hidden="true">
-                    <img src="" alt="preview of "></a>
-                </figure>
-                <h5>Skills</h5>
-                <ul>
-                  <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
-                  <li>Accessibility testing</li>
-                </ul>
-                <h5>Tools</h5>
-                <ul>
-                  <li>Codepen</li>
-                  <li>WAVE</li>
-                </ul>
-        
-                <h5>Description</h5>
-                <p>Created reusable, accessible, HTML and CSS-based components, with optional JavaScript.
-                </p>
-                <div class="links">
-                  <a class="button" href="" target="_blank"
-                    aria-label="View example custom cart page">View Site</a>
-                  <a class="button" href="" target="_blank"
-                    aria-label="View code examples">View Code</a>
-                </div>
-              </article> -->
-
             <article class="project">
               <div class="intro">
                 <h4>
-                  <strong>Co-created AI Prompt Builder Powered by React</strong><br /><i>PromptAlchemy: A Chingu team project</i>
+                  <strong>Co-created AI prompt builder powered by React</strong>
                 </h4>
                 <figure>
-                  <a href="https://promptalchemy-gemini.netlify.app/" target="_blank" title="Visit the PromptAlchemy app">
+                  <a href="https://promptalchemy-gemini.netlify.app/" target="_blank"
+                    title="Visit the PromptAlchemy app">
                     <img src="img/promptalchemy.png" alt="preview of PromptAlchemy app" /></a>
                 </figure>
-                <!-- <div class="links">
-                  <a class="button" href="https://promptalchemy-gemini.netlify.app/" target="_blank"
-                    aria-label="View PromptAlchemy site">View Site</a>
-                  <a class="button" href="https://github.com/chingu-voyages/V54-tier1-team-02?tab=readme-ov-file"
-                    target="_blank" aria-label="View PromptAlchemy code">View Code</a>
-                </div> -->
               </div>
               <div class="description">
                 <h5>Skills</h5>
@@ -327,154 +283,6 @@
                 </p>
               </div>
             </article>
-
-            <!-- <article class="project">
-              <h4>
-                <strong>Custom WordPress Development</strong><br /><i>Fictional Marketing Agency</i>
-              </h4>
-              <figure>
-                <a href="https://alisonh23.sg-host.com/" target="_blank" aria-hidden="true">
-                  <img src="img/accelerate_wordpress.png" alt="preview of Accelerate WordPress site" /></a>
-              </figure>
-              <h5>Skills</h5>
-              <ul>
-                <li>Utilization of HTML and CSS</li>
-                <li>
-                  PHP development of WordPress Custom Themes, Child Themes,
-                  and advanced theme customizations
-                </li>
-                <li>
-                  Work flows utilizing local development, stage, and
-                  production environments
-                </li>
-                <li>Application of accessible design practices</li>
-                <li>Editing and updating existing websites</li>
-              </ul>
-              <h5>Tools</h5>
-              <ul>
-                <li>MySQL</li>
-                <li>WordPress</li>
-                <li>Plugins</li>
-                <li>Visual Studio Code</li>
-                <li>GitHub Repository</li>
-                <li>SiteGround</li>
-              </ul>
-              <h5>Description</h5>
-              <p>
-                This is a custom WordPress site developed for a Skillcrush
-                course. I customized the project by implementing a
-                mobile-first strategy and adding customer quotes on the
-                homepage, replacing a Twitter feed in the original design.
-              </p>
-
-              <div class="links">
-                <a class="button" href="https://alisonh23.sg-host.com/" target="_blank"
-                  aria-label="View custom WordPress site">View Site</a>
-                <a class="button" href="https://github.com/alison-ah/accelerate-marketing-wp/tree/main" target="_blank"
-                  aria-label="View custom WordPress code">View Code</a>
-              </div>
-            </article> -->
-
-            <!-- <article class="project">
-                <h4>
-                  <strong>Full Stack Collection App</strong><br><i>Family library card catalog</i>
-                </h4>
-                <figure>
-                  <a href="https://family-library-app.replit.app/" target="_blank" aria-hidden="true">
-                    <img src="img/family_library_app.png" alt="preview of family library app"></a>
-                </figure>
-                <h5>Skills</h5>
-                <ul>
-                  <li>Utilization of HTML, CSS, and JavaScript</li>
-                  <li>
-                    Development of RESTful API routes and a SQL database with
-                    Flask in Python
-                  </li>
-                  <li>Application of accessible design practices</li>
-                  <li>
-                    Updating and adapting legacy code, leveraging AI
-                    assistance for learning and troubleshooting
-                  </li>
-                </ul>
-                <h5>Tools</h5>
-                <ul>
-                  <li>Replit</li>
-                  <li>Chrome DevTools</li>
-                  <li>Accessibility, HTML, and CSS validators</li>
-                </ul>
-        
-                <h5>Description</h5>
-                <p>
-                  The Family Library app allows you to add, edit, and delete
-                  books with a REST API so you can organize your collection
-                  with a basic “card catalog.” You can also search by title or
-                  author. It was built and deployed on Replit. It is an
-                  iteration on the
-                  <span><a
-                      href="https://replit.com/@alison-ah/Female-supervillain-trading-card-app-REST-API-version?v=1#main.py"
-                      target="_blank">female supervillain trading card app</a></span>
-                  and
-                  <span><a href="https://github.com/alison-ah/recipe-app" target="_blank">recipe app</a></span>
-                  Skillcrush projects.
-                </p>
-                <p>
-                  During the COVID lock down, I organized our family’s book
-                  collection with a library-like format. This app can take
-                  that project to another level.
-                </p>
-                <div class="links">
-                  <a class="button" href="https://family-library-app.replit.app/" target="_blank"
-                    aria-label="View family library app site">View Site</a>
-                  <a class="button" href="https://replit.com/@alison-ah/Family-Library-App-REST-API" target="_blank"
-                    aria-label="View family library app code">View Code</a>
-                </div>
-              </article> -->
-
-            <!-- <article class="project">
-              <h4>
-                <strong>React App with Filters</strong><br /><i>Resource list for learning to code</i>
-              </h4>
-              <figure>
-                <a href="https://learning-to-code-resource-list.netlify.app/" target="_blank" aria-hidden="true">
-                  <img src="img/learning_to_code_resource_list.png" alt="preview of resource list" /></a>
-              </figure>
-              <h5>Skills</h5>
-              <ul>
-                <li>Utilization of HTML, CSS, and React.js</li>
-                <li>Image editing</li>
-                <li>Application of accessible design practices</li>
-                <li>Updating and adapting legacy code</li>
-              </ul>
-              <h5>Tools</h5>
-              <ul>
-                <li>CodeSandbox</li>
-                <li>GitHub Repository</li>
-                <li>Netlify</li>
-                <li>Canva</li>
-                <li>Chrome DevTools</li>
-                <li>Accessibility and CSS validators</li>
-              </ul>
-              <h5>Description</h5>
-              <p>
-                This resource list allows you to filter by type. It was built
-                in CodeSandbox with JavaScript React and image icons created
-                in Canva. Then it was saved to GitHub and deployed on Netlify.
-              </p>
-              <p>
-                Noticing the challenge of sharing resources with Skillcrush
-                students in the company’s Slack channel, I decided to augment
-                a
-                <span><a href="https://codesandbox.io/p/sandbox/funny-tamas-lscpky" target="_blank">course project that
-                    filtered hotel rooms</a></span>
-                to share resources for learning to code.
-              </p>
-              <div class="links">
-                <a class="button" href="https://learning-to-code-resource-list.netlify.app/" target="_blank"
-                  aria-label="View resource list site">View Site</a>
-                <a class="button" href="https://github.com/alison-ah/learning-to-code-resource-list-with-filter"
-                  target="_blank" aria-label="View resource list code">View Code</a>
-              </div>
-            </article> -->
           </div>
         </div>
       </section>
@@ -486,8 +294,6 @@
       <div class="content-wrapper">
         <h2>Contact</h2>
         <div class="social">
-            
-            
           <ul>
             <li>
               <a href="mailto:alison@andersonholland.com" target="_blank" title="Email" aria-label="Email">
@@ -495,19 +301,11 @@
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/andersonholland" target="_blank" title="View LinkedIn profile" aria-label="View LinkedIn profile">
+              <a href="https://linkedin.com/in/andersonholland" target="_blank" title="View LinkedIn profile"
+                aria-label="View LinkedIn profile">
                 <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
               </a>
             </li>
-            <!-- <li>
-              <a href="https://github.com/alison-ah" target="_blank" title="View GitHub profile" aria-label="View GitHub profile">
-                <i class="fa-brands fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://scholar.google.com/citations?hl=en&user=dTVgryYAAAAJ" target="_blank" title="View Google Scholar profile" aria-label="View Google Scholar profile"><i
-                  class="fa-brands fa-google-scholar" aria-hidden="true"></i>
-              </a>
-            </li> -->
           </ul>
         </div>
         <p>Alison Holland, EdD</p>
