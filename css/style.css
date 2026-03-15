@@ -79,7 +79,6 @@ html {
   color: var(--primary-color);
   margin: auto;
   justify-content: center;
-  max-width: 2000px;
 }
 
 body {
