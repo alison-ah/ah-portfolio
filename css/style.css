@@ -388,6 +388,7 @@ nav ul li a:hover {
 }
 
 .project img {
+  outline: 2px solid white;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
 }
 
