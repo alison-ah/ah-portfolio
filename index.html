@@ -34,8 +34,9 @@
 
   <header>
     <h1>Alison Holland, EdD | Web Developer</h1>
+  </header>
 
-    <nav id="main">
+  <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -43,8 +44,8 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
-  <main>
+
+  <main id="main">
     <section id="about">
       <div class="content-wrapper">
         <figure id="alison">
@@ -61,11 +62,14 @@
             Minnesota Extension, where I partnered with educators to create engaging, accessible learning experiences. I
             also recently served my community as a County Commissioner.
           </p>
-          Today, at the University of Minnesota Foundation, I focus on improving the accessibility and usability of our
-          digital tools—reflecting the values I’ve carried throughout my career: accessibility, collaboration, and
-          solving real-world problems. My path hasn’t been linear—and that’s a strength. Working across disciplines has
-          taught me how much different fields can learn from one another, and I bring that systems-thinking mindset to
-          every challenge I take on.
+          <p>
+            Today, at the University of Minnesota Foundation, I focus on improving the accessibility and usability of
+            our
+            digital tools—reflecting the values I’ve carried throughout my career: accessibility, collaboration, and
+            solving real-world problems. My path hasn’t been linear—and that’s a strength. Working across disciplines
+            has
+            taught me how much different fields can learn from one another, and I bring that systems-thinking mindset to
+            every challenge I take on.
           </p>
           <div class="social">
             <ul>
@@ -95,193 +99,227 @@
       <section id="skills">
         <div class="content-wrapper">
           <h2>Skills</h2>
-          <ul>
-            <li>
-              <span>Front-end technologies</span>, including responsive,
-              mobile-first design and accessibility practices (HTML5, CSS3,
-              JavaScript, Media Queries, Content Management Systems)
-            </li>
-            <li>
-              <span>Back-end development</span>, including Object-Oriented
-              Programming (Python) and database integration (SQL, Jinja, PHP)
-            </li>
-            <li>
-              <span>Software testing</span>, including browser (Ghost Inspector, Marker.io, Happo) and accessibility
-              testing (WAVE, Pope Tech, Google Lighthouse, keyboard-only navigation, VoiceOver)
-            </li>
-            <li><span>Version control</span> (Git, GitHub)</li>
-            <li><span>Web frameworks</span> (React, Flask)</li>
-            <li>
-              <span>API development and integration</span>, including CRUD
-              operations (REST, RESTful)
-            </li>
-            <li>
-              <span>Learning design</span> and learning management systems
-              (Canvas, Moodle), including knowledge of UI/UX design
-            </li>
-            <li>
-              <span>Quantitative and qualitative research</span>, including
-              survey design (Qualtrics), usability testing, focus groups, and
-              data analysis and visualization
-            </li>
-            <li>
-              <span>Plain language writing</span>, break downing complex
-              topics and turning jargon into plain language
-            </li>
-            <li>
-              <span>Strategic and systems thinking</span>, aligning technical work and
-              daily tasks with business goals and cross-team collaboration
-            </li>
-            <li>
-              <span>Standard office and design software</span> (Microsoft Office, Google
-              Suite, Canva, Slack, Figma)
-            </li>
-          </ul>
+          <div id="skills-lists">
+            <div class="list">
+              <h3>Developer skills</h3>
+              <ul>
+                <li>
+                  <span>Front-end technologies</span>, including responsive,
+                  mobile-first design and accessibility practices (HTML5, CSS3,
+                  JavaScript, Media Queries, Content Management Systems)
+                </li>
+                <li>
+                  <span>Back-end development</span>, including Object-Oriented
+                  Programming (Python) and database integration (SQL, Jinja, PHP)
+                </li>
+                <li>
+                  <span>Software testing</span>, including browser (Ghost Inspector, Marker.io, Happo) and accessibility
+                  testing (WAVE, Pope Tech, Google Lighthouse, keyboard-only navigation, VoiceOver)
+                </li>
+                <li><span>Version control</span> (Git, GitHub)</li>
+                <li><span>Web frameworks</span> (React, Flask)</li>
+                <li>
+                  <span>API development and integration</span>, including CRUD
+                  operations (REST, RESTful)
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <h3>Complementary skills</h3>
+              <ul>
+                <li>
+                  <span>Learning design</span> and learning management systems
+                  (Canvas, Moodle), including knowledge of UI/UX design
+                </li>
+                <li>
+                  <span>Quantitative and qualitative research</span>, including
+                  survey design (Qualtrics), usability testing, focus groups, and
+                  data analysis and visualization
+                </li>
+                <li>
+                  <span>Plain language writing</span>, break downing complex
+                  topics and turning jargon into plain language
+                </li>
+                <li>
+                  <span>Strategic and systems thinking</span>, aligning technical work and
+                  daily tasks with business goals and cross-team collaboration
+                </li>
+                <li>
+                  <span>Standard office and design software</span> (Microsoft Office, Google
+                  Suite, Canva, Slack, Figma)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="projects">
         <div class="content-wrapper">
           <h2>Projects</h2>
-          <h3>Work products</h3>
-          <div class="content-wrapper content">
-            <article class="project">
-              <div class="intro">
-                <h4>
-                  <strong>Improved accessibility in legacy code</strong>
-                </h4>
-                <figure>
-                  <a href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank"
-                    title="Visit the University of Minnesota's online giving tool">
-                    <img src="img/makingagift.png"
-                      alt="preview of the University of Minnesota's online giving tool"></a>
-                </figure>
-              </div>
-              <div class="description">
-                <h5>Skills</h5>
-                <ul>
-                  <li>Conducting both automated and manual accessibility testing</li>
-                  <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
-                  <li>Updating and adapting legacy code</li>
-                </ul>
-                <h5>Tools</h5>
-                <ul>
-                  <li>PopeTech</li>
-                  <li>WAVE</li>
-                  <li>Ghost Inspector</li>
-                  <li>Chrome DevTools (including Lighthouse)</li>
-                  <li>Visual Studio Code</li>
-                  <li>Git/GitHub</li>
-                </ul>
+          <div id="project-descriptions" class="content-wrapper">
+            <div class="double">
+              <h3>Work products</h3>
+              <div class="content-wrapper content">
+                <article class="project">
+                  <h4>
+                    <strong>Improved accessibility in legacy code</strong>
+                  </h4>
+                  <div class="intro">
 
-                <h5>Description</h5>
-                <p>
-                  Increased accessibility for the University of Minnesota's online giving tool,
-                  improving PopeTech score from 6.7 to 9.8 (development site: 10) by
-                  modernizing legacy UI to comply with WCAG 2.2. Key enhancements included
-                  better keyboard navigation, ARIA implementations, and screen-reader support.
-                </p>
-                <p class="note">
-                  Work is ongoing to make this site as accessible as possible.
-                </p>
-              </div>
-            </article>
+                    <div class="description">
+                      <h5>Skills</h5>
+                      <ul>
+                        <li>Conducting both automated and manual accessibility testing</li>
+                        <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
+                        <li>Updating and adapting legacy code</li>
+                      </ul>
+                      <h5>Tools</h5>
+                      <ul>
+                        <li>PopeTech</li>
+                        <li>WAVE</li>
+                        <li>Ghost Inspector</li>
+                        <li>Chrome DevTools (including Lighthouse)</li>
+                        <li>Visual Studio Code</li>
+                        <li>Git/GitHub</li>
+                      </ul>
+                    </div>
 
-            <article class="project">
-              <div class="intro">
-                <h4>
-                  <strong>Developed scalable custom appeal cart pages</strong>
-                </h4>
-                <p class="callout">
+                    <figure>
+                      <a href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank"
+                        title="Visit the University of Minnesota's online giving tool">
+                        <img src="img/makingagift.png"
+                          alt="preview of the University of Minnesota's online giving tool"></a>
+                    </figure>
 
-                </p>
-                <figure>
-                  <a href="https://makingagift.umn.edu/give/customgift.html?pageType=AL&customid=2006&cart=1845"
-                    target="_blank" title="View one of the University of Minnesota Foundation's custom cart pages">
-                    <img src="img/custom-giving-ur.png"
-                      alt="preview of the University of Minnesota's Urolith Center custom cart page"></a>
-                </figure>
-              </div>
-              <div class="description">
-                <h5>Skills</h5>
-                <ul>
-                  <li>Development and utilization of Elasticsearch API</li>
-                  <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
-                  <li>Working within a legacy codebase, leveraging existing jQuery design patterns</li>
-                </ul>
-                <h5>Tools</h5>
-                <ul>
-                  <li>Elasticsearch</li>
-                  <li>Figma</li>
-                  <li>Chrome DevTools</li>
-                  <li>Visual Studio Code</li>
-                  <li>Git/GitHub</li>
-                </ul>
+                  </div>
 
-                <h5>Description</h5>
-                <p>Developed custom appeal cart pages and an Elasticsearch-backed API, collaborating with
-                  cross-functional teams to
-                  establish a Quality Assurance (QA) workflow that supports scalability.
-                </p>
+                  <div>
+                    <h5>Description</h5>
+                    <p>I led the accessibility improvements for the University of Minnesota's online giving tool,
+                      boosting the PopeTech
+                      score from 6.7 to 9.8 (with the development site achieving a perfect 10). This was accomplished by
+                      modernizing the
+                      legacy UI to comply with WCAG 2.2 standards. I conducted accessibility testing, organized issues,
+                      and implemented key
+                      enhancements, including refined keyboard navigation, ARIA implementations, and improved
+                      screen-reader support.
+                    </p>
+                    <p class="note">
+                      Work is ongoing to make this site as accessible as possible.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="project">
+                  <h4>
+                    <strong>Developed scalable custom appeal cart pages</strong>
+                  </h4>
+                  <div class="intro">
+
+                    <div class="description">
+                      <h5>Skills</h5>
+                      <ul>
+                        <li>Development and utilization of Elasticsearch API</li>
+                        <li>Application of HTML, CSS, and JavaScript skills with accessible practices</li>
+                        <li>Working within a legacy codebase, leveraging existing jQuery design patterns</li>
+                      </ul>
+                      <h5>Tools</h5>
+                      <ul>
+                        <li>Elasticsearch</li>
+                        <li>Figma</li>
+                        <li>Chrome DevTools</li>
+                        <li>Visual Studio Code</li>
+                        <li>Git/GitHub</li>
+                      </ul>
+                    </div>
+
+                    <figure>
+                      <a href="https://makingagift.umn.edu/give/customgift.html?pageType=AL&customid=2006&cart=1845"
+                        target="_blank" title="View one of the University of Minnesota Foundation's custom cart pages">
+                        <img src="img/custom-giving-ur.png"
+                          alt="preview of the University of Minnesota's Urolith Center custom cart page"></a>
+                    </figure>
+
+                  </div>
+                  <div>
+                    <h5>Description</h5>
+                    <p>I revamped custom appeal cart pages that were originally hard-coded in a beta version before my
+                      arrival at the
+                      organization. This involved integrating them with an Elasticsearch-backed API that I developed. I
+                      also
+                      worked closely
+                      with cross-functional teams to implement a Quality Assurance (QA) workflow designed to enhance
+                      scalability.
+                    </p>
+                  </div>
+                </article>
               </div>
-            </article>
-          </div>
-          <h3>Learning projects</h3>
-          <div class="content-wrapper content single">
-            <article class="project">
-              <div class="intro">
-                <h4>
-                  <strong>Co-created AI prompt builder powered by React</strong>
-                </h4>
-                <figure>
-                  <a href="https://promptalchemy-gemini.netlify.app/" target="_blank"
-                    title="Visit the PromptAlchemy app">
-                    <img src="img/promptalchemy.png" alt="preview of PromptAlchemy app" /></a>
-                </figure>
+            </div>
+            <div class="single">
+              <h3>Learning project</h3>
+              <div class="content-wrapper content">
+                <article class="project single">
+                  <h4>
+                    <strong>Co-created AI prompt builder powered by React</strong>
+                  </h4>
+                  <div class="intro">
+
+                    <div class="description">
+                      <h5>Skills</h5>
+                      <ul>
+                        <li>Utilization of HTML, CSS, and React.js</li>
+                        <li>Implementation of Google Gemini API</li>
+                        <li>
+                          Collaborative development on a remote team using agile
+                          practices, including both solo and pair programming
+                        </li>
+                        <li>Application of accessible design practices</li>
+                      </ul>
+                      <h5>Tools</h5>
+                      <ul>
+                        <li>React + Vite</li>
+                        <li>Google Gemini API</li>
+                        <li>Netlify</li>
+                        <li>Figma</li>
+                        <li>Chrome DevTools</li>
+                        <li>GitHub Repository and Projects</li>
+                      </ul>
+                    </div>
+
+                    <figure>
+                      <a href="https://promptalchemy-gemini.netlify.app/" target="_blank"
+                        title="Visit the PromptAlchemy app">
+                        <img src="img/promptalchemy.png" alt="preview of PromptAlchemy app" /></a>
+                    </figure>
+                  </div>
+                    <div>
+                      <h5>Description</h5>
+                      <p>
+                        This app was created through a
+                        <a href="https://chingu.io" target="_blank">Chingu</a>
+                        tier 1 voyage. As a team, we built a web application,
+                        PromptAlchemy, which lets its users become more effective at
+                        building AI prompts.
+                      </p>
+                      <p>
+                        It follows a structured methodology called a
+                        <a
+                            href="https://ai.plainenglish.io/prompt-engineering-with-pentagram-framework-persona-context-task-output-and-constraint-3717b0733578"
+                            target="_blank">Pentagram</a>
+                        to help the user build good prompts, test them, and learn to
+                        improve on them along the way.
+                      </p>
+                      <p>
+                        I led the implementation of accessibility best practices and
+                        applied design styles to ensure an intuitive and inclusive
+                        user experience.
+                      </p>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="description">
-                <h5>Skills</h5>
-                <ul>
-                  <li>Utilization of HTML, CSS, and React.js</li>
-                  <li>Implementation of Google Gemini API</li>
-                  <li>
-                    Collaborative development on a remote team using agile
-                    practices, including both solo and pair programming
-                  </li>
-                  <li>Application of accessible design practices</li>
-                </ul>
-                <h5>Tools</h5>
-                <ul>
-                  <li>React + Vite</li>
-                  <li>Google Gemini API</li>
-                  <li>Netlify</li>
-                  <li>Figma</li>
-                  <li>Chrome DevTools</li>
-                  <li>GitHub Repository and Projects</li>
-                </ul>
-                <h5>Description</h5>
-                <p>
-                  This app was created through a
-                  <span><a href="https://chingu.io" target="_blank">Chingu</a></span>
-                  tier 1 voyage. As a team, we built a web application,
-                  PromptAlchemy, which lets its users become more effective at
-                  building AI prompts.
-                </p>
-                <p>
-                  It follows a structured methodology called a
-                  <span><a
-                      href="https://ai.plainenglish.io/prompt-engineering-with-pentagram-framework-persona-context-task-output-and-constraint-3717b0733578"
-                      target="_blank">Pentagram</a></span>
-                  to help the user build good prompts, test them, and learn to
-                  improve on them along the way.
-                </p>
-                <p>
-                  I led the implementation of accessibility best practices and
-                  applied design styles to ensure an intuitive and inclusive
-                  user experience.
-                </p>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>

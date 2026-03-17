@@ -137,6 +137,7 @@ select {
 p a {
   padding: 0.2rem;
   border: none;
+  color: var(--tertiary-color-3);
 }
 
 figure a {
@@ -180,6 +181,12 @@ h1 {
   font-size: 1.25rem;
   font-weight: lighter;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  margin: 0;
+  width: 100%;
+  padding-top: 1rem;
 }
 
 h2 {
@@ -226,6 +233,8 @@ p {
   font-size: 1rem;
   font-weight:normal;
   margin: 0.5rem 0rem;
+  max-width: 80ch;
+  word-wrap: break-word;
 }
 
 p.note {
@@ -241,7 +250,6 @@ p.callout {
 }
 
 .content-wrapper {
-  margin: 0;
   padding: 0.1rem 1.5rem 1.5rem 1.5rem;
   max-width: 1500px;
   justify-content: center;
@@ -281,7 +289,7 @@ nav {
   text-transform: uppercase;
   color: var(--primary-color);
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 nav ul {
@@ -318,12 +326,8 @@ nav ul li a:hover {
 #about .content-wrapper {
   background-color: white;
   justify-content: center;
-  align-itrems: center;
+  align-items: center;
   padding: 1.6px 48px;
-}
-
-#about .text {
-  width: 100%;
 }
 
 #about h2 {
@@ -353,7 +357,7 @@ nav ul li a:hover {
 }
 
 #skills ul {
-  gap: 1rem;
+  gap: 2rem;
   list-style: disc;
   margin-left: 2rem;
 }
@@ -361,6 +365,11 @@ nav ul li a:hover {
 #skills ul span {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+#skills li {
+  max-width: 80ch;
+  word-wrap: break-word;
 }
 
 #projects {
@@ -378,21 +387,27 @@ nav ul li a:hover {
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
   border-radius: 25px;
   border: 2px solid var(--border-color);
   padding: 1rem 1rem;
   margin: 2rem 0rem;
+  width: 100%;
+}
+
+.description {
+  justify-self: left;
+}
+
+.project .intro {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  max-width: 80ch;
+  word-wrap: break-word;
 }
 
 .project img {
   outline: 2px solid white;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
-}
-
-.project span {
-  text-decoration: underline;
 }
 
 .project a:hover {
@@ -487,16 +502,10 @@ footer p {
       scroll-behavior: smooth;  
   }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
   h1 {
     font-size: 1.75rem;
-    display: flex;
-    justify-content: center;
-    background-color: var(--secondary-color);
-    margin: 0;
-    width: 100%;
-    padding-top: 1rem;
   }
 
   nav ul li {
@@ -509,20 +518,26 @@ footer p {
     flex-direction: row-reverse;
   }
 
-  #projects .content {
+  #skills-lists {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    gap: 0.5rem 3rem 0.5rem 0rem;
+    max-height: 625px;
   }
 
-  #projects .content.single {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  #skills-lists .list {
+    width: 50%;
   }
-  
-  .project {
-    width: 42%;
+
+  #projects .intro {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-self: flex-start;
+  }
+
+  .project figure {
+    width: 80%;
+    max-width: 350px;
   }
 
   .social ul {
@@ -532,43 +547,50 @@ footer p {
 
 }
 
-@media only screen and (min-width: 1522px) {
+@media only screen and (min-width: 992px) {
 
-  #about .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-  }
-  
   #projects .content {
     display: flex;
-    flex-wrap: nowrap;
-    align-itrems: stretch;
+    flex-wrap: wrap;
+    max-width: 1500px;
   }
 
   .project {
-    flex-direction: row;
-    align-itrems: flex-start;
-    width: 48%;
+    align-items: flex-start;
+    width: 49%;
   }
 
-  .intro {
-    flex: 0 0 300px;
+  .project .intro {
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 
-  .intro figure {
-    padding: 2rem 1rem;
+  #projects .intro {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #skills-lists {
+    max-height: 450px;
   }
 
-  .description {
-    flex: 1; 
-    padding-left: 2rem;
+  #projects .intro {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-self: flex-start;
   }
 
-  figure {
-    padding: 2rem;
+  .project figure {
+    width: 80%;
+    max-width: 400px;
   }
 
+  .project.single {
+    align-items: flex-start;
+    max-width: 1000px;
+  }
 }
 
 @media print,
