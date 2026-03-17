@@ -385,6 +385,7 @@ nav ul li a:hover {
 #projects .content {
   justify-content: space-between;
   gap: 1rem;
+  padding-bottom: 0rem;
 }
 
 .project {
