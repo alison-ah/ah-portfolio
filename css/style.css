@@ -388,11 +388,19 @@ nav ul li a:hover {
   padding-bottom: 0rem;
 }
 
+#projects .content-wrapper.content {
+  padding: 0.1rem;
+}
+
+#project-descriptions.content-wrapper {
+  padding: 0.1rem 0 1.5rem;
+}
+
 .project {
   border-radius: 25px;
   border: 2px solid var(--border-color);
   padding: 1rem 1rem;
-  margin: 2rem 0rem;
+  margin: 0 0 2rem;
   width: 100%;
 }
 
@@ -530,6 +538,14 @@ footer p {
 
   #skills-lists .list {
     width: 50%;
+  }
+
+  #projects .content-wrapper.content {
+    padding: 0.1rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  #project-descriptions.content-wrapper {
+    padding: 0.1rem 1.5rem 1.5rem 1.5rem;
   }
 
   #projects .intro {
