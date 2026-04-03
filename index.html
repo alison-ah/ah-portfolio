@@ -38,13 +38,13 @@
   </header>
 
   <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <main id="main">
     <section id="about">
@@ -185,14 +185,14 @@
                         <li>Git/GitHub</li>
                       </ul>
                     </div>
-
-                    <figure>
-                      <a href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank"
-                        title="Visit the University of Minnesota's online giving tool">
-                        <img src="img/makingagift.png"
-                          alt="preview of the University of Minnesota's online giving tool"></a>
-                    </figure>
-
+                    <div class="project-image">
+                      <figure>
+                        <a href="https://makingagift.umn.edu/give/fund.html?id=1493935302783" target="_blank"
+                          title="Visit the University of Minnesota's online giving tool">
+                          <img src="img/makingagift.png"
+                            alt="preview of the University of Minnesota's online giving tool"></a>
+                      </figure>
+                    </div>
                   </div>
 
                   <div>
@@ -234,23 +234,30 @@
                         <li>Git/GitHub</li>
                       </ul>
                     </div>
-
-                    <figure>
-                      <a href="https://makingagift.umn.edu/give/customgift.html?pageType=AL&cart=1845&customid=2006"
-                        target="_blank" title="View one of the University of Minnesota Foundation's custom cart pages">
-                        <img src="img/custom-giving-ur.png"
-                          alt="preview of the University of Minnesota's Urolith Center custom cart page"></a>
-                    </figure>
-
+                    <div class="project-image">
+                      <figure id="figure" aria-live="polite">
+                        <a id="figure-link" href="#" target="_blank" rel="noopener">
+                          <img id="figure-img" src="" alt="">
+                        </a>
+                      </figure>
+                      <div id="controls">
+                        <p>View another example of this page.</p>
+                        <button id="prev" type="button" aria-label="Previous item">Previous</button>
+                        <button id="next" type="button" aria-label="Next item">Next</button>
+                      </div>
+                    </div>
                   </div>
                   <div>
                     <h5>Description</h5>
-                    <p>I revamped custom appeal cart pages that were originally hard-coded in a beta version prior to my arrival at the
-                      organization. This involved integrating them with an Elasticsearch-backed API that I developed. I am also collaborating 
+                    <p>I revamped custom appeal cart pages that were originally hard-coded in a beta version prior to my
+                      arrival at the
+                      organization. This involved integrating them with an Elasticsearch-backed API that I developed. I
+                      am also collaborating
                       to implement a Quality Assurance (QA) workflow focused on enhancing scalability.
                     </p>
                     <p class="note">
-                      As a result, this project scaled to 10+ appeals within two weeks of rollout, representing a 150% increase from the
+                      As a result, this project scaled to 10+ appeals within two weeks of rollout, representing a 150%
+                      increase from the
                       4-appeal beta phase that preceded the API launch.
                     </p>
                   </div>
@@ -286,44 +293,44 @@
                         <li>Chrome DevTools</li>
                         <li>GitHub Repository and Projects</li>
                       </ul>
-                  </div>
-
-                    <figure>
-                      <a href="https://promptalchemy-gemini.netlify.app/" target="_blank"
-                        title="Visit the PromptAlchemy app">
-                        <img src="img/promptalchemy.png" alt="preview of PromptAlchemy app" /></a>
-                    </figure>
-                  </div>
-                    <div>
-                      <h5>Description</h5>
-                      <p>
-                        This app was created through a
-                        <a href="https://chingu.io" target="_blank">Chingu</a>
-                        tier 1 voyage. As a team, we built a web application,
-                        PromptAlchemy, which lets its users become more effective at
-                        building AI prompts.
-                      </p>
-                      <p>
-                        It follows a structured methodology called a
-                        <a
-                            href="https://ai.plainenglish.io/prompt-engineering-with-pentagram-framework-persona-context-task-output-and-constraint-3717b0733578"
-                            target="_blank">Pentagram</a>
-                        to help the user build good prompts, test them, and learn to
-                        improve on them along the way.
-                      </p>
-                      <p>
-                        I led the implementation of accessibility best practices and
-                        applied design styles to ensure an intuitive and inclusive
-                        user experience.
-                      </p>
+                    </div>
+                    <div class="project-image">
+                      <figure>
+                        <a href="https://promptalchemy-gemini.netlify.app/" target="_blank"
+                          title="Visit the PromptAlchemy app">
+                          <img src="img/promptalchemy.png" alt="preview of PromptAlchemy app" /></a>
+                      </figure>
                     </div>
                   </div>
-                </article>
+                  <div>
+                    <h5>Description</h5>
+                    <p>
+                      This app was created through a
+                      <a href="https://chingu.io" target="_blank">Chingu</a>
+                      tier 1 voyage. As a team, we built a web application,
+                      PromptAlchemy, which lets its users become more effective at
+                      building AI prompts.
+                    </p>
+                    <p>
+                      It follows a structured methodology called a
+                      <a href="https://ai.plainenglish.io/prompt-engineering-with-pentagram-framework-persona-context-task-output-and-constraint-3717b0733578"
+                        target="_blank">Pentagram</a>
+                      to help the user build good prompts, test them, and learn to
+                      improve on them along the way.
+                    </p>
+                    <p>
+                      I led the implementation of accessibility best practices and
+                      applied design styles to ensure an intuitive and inclusive
+                      user experience.
+                    </p>
+                  </div>
               </div>
+              </article>
             </div>
           </div>
         </div>
-      </section>
+    </div>
+    </section>
     </div>
   </main>
 
