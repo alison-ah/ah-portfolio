@@ -73,7 +73,7 @@ const options = [
     }
 ]
 
-const controls = document.getElementById('controls'); // wrapper for prev/next
+const controls = document.getElementById('controls');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const link = document.getElementById('figure-link');
@@ -93,7 +93,6 @@ function showIndex(i){
     link.href = '#';
     img.src = '';
     img.alt = '';
-    caption.textContent = '';
     return;
   }
   const idx = ((i % len) + len) % len; // normalize for looping
