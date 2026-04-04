@@ -78,40 +78,50 @@ const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const link = document.getElementById('figure-link');
 const img = document.getElementById('figure-img');
-const caption = document.getElementById('figure-caption');
 
-let index = 0;
+if (!link || !img) {
+  console.warn('Missing #figure-link or #figure-img in DOM; carousel not initialized.');
+} else {
+  let index = 0;
 
-function updateControlsVisibility(){
-  if (!controls) return;
-  controls.style.display = options.length <= 1 ? 'none' : '';
-}
+  const len = () => options.length;
 
-function showIndex(i){
-  const len = options.length;
-  if (len === 0) {
-    link.href = '#';
-    img.src = '';
-    img.alt = '';
-    return;
+  function updateControlsVisibility() {
+    if (!controls) return;
+    controls.style.display = len() <= 1 ? 'none' : '';
   }
-  const idx = ((i % len) + len) % len; // normalize for looping
-  const item = options[idx];
-  link.href = item.link || '#';
-  link.title = item.title || '';
-  img.src = item.src || '';
-  img.alt = item.alt || item.title || '';
-  index = idx;
-}
 
-prevBtn.addEventListener('click', () => showIndex(index - 1));
-nextBtn.addEventListener('click', () => showIndex(index + 1));
+  // normalize index to 0..len-1 (works for negative values too)
+  function normalize(i) {
+    const n = len();
+    return n ? ((i % n) + n) % n : 0;
+  }
 
-document.addEventListener('keydown', (e) => {
-  if (options.length <= 1) return;
-  if (e.key === 'ArrowLeft') showIndex(index - 1);
-  if (e.key === 'ArrowRight') showIndex(index + 1);
-});
+  function showIndex(i) {
+    if (len() === 0) {
+      link.href = '#';
+      img.src = '';
+      img.alt = '';
+      return;
+    }
+    const idx = normalize(i);
+    const item = options[idx];
+    if (!item) return;
+    link.href = item.link || '#';
+    link.title = item.title || '';
+    img.src = item.src || '';
+    img.alt = item.alt || item.title || '';
+    index = idx;
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => showIndex(index - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => showIndex(index + 1));
+
+  document.addEventListener('keydown', (e) => {
+    if (len() <= 1) return;
+    if (e.key === 'ArrowLeft') showIndex(index - 1);
+    if (e.key === 'ArrowRight') showIndex(index + 1);
+  });
 
 // init
 updateControlsVisibility();
