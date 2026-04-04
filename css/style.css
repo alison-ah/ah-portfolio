@@ -59,7 +59,7 @@ textarea {
   --secondary-color: #c9d8db;
   --darker-primary-color: #333841;
   --border-color: #5E666F;
-  --highlight-color: white;
+  --highlight-color: var(--tertiary-color-2);
   --default-background-color: white;
   --default-text-color: black;
 
@@ -290,6 +290,7 @@ nav {
   color: var(--primary-color);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 nav ul {
@@ -400,8 +401,9 @@ nav ul li a:hover {
   border-radius: 25px;
   border: 2px solid var(--border-color);
   padding: 1rem 1rem;
-  margin: 0 0 2rem;
-  width: 100%;
+  margin: auto;
+  width: auto;
+  justify-self: center;
 }
 
 .description {
@@ -418,11 +420,41 @@ nav ul li a:hover {
 .project-image {
   width: 100%;
   height: auto;
+  text-align: center;
+  position: relative;    /* new: for absolute-positioned controls */
+  display: block;
+  overflow: hidden;
+}
+
+#custom .project-image {
+  height: 685px;
 }
 
 .project img {
   outline: 2px solid white;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.85);
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  pointer-events: auto;
+}
+
+#controls button {
+  background-color: var(--darker-primary-color);
+  color: white;
+  border-radius: 10px;
+  width: 5rem;
 }
 
 .project a:hover {
@@ -545,7 +577,7 @@ footer p {
     width: 50%;
   }
 
-  #projects .content-wrapper.content {
+  /* #projects .content-wrapper.content {
     padding: 0.1rem 1.5rem 1.5rem 1.5rem;
   }
 
@@ -563,7 +595,7 @@ footer p {
     width: 80%;
     max-width: 350px;
     padding: 1rem 0 0 0;
-  }
+  } */
 
   .social ul {
     font-size: 3rem;
@@ -583,6 +615,7 @@ footer p {
   .project {
     align-items: flex-start;
     width: 49%;
+    margin: 0 0 2rem;
   }
 
   .project .intro {
@@ -601,7 +634,7 @@ footer p {
     max-height: 450px;
   }
 
-  #projects .intro {
+  /* #projects .intro {
     display: flex;
     flex-wrap: nowrap;
     justify-self: flex-start;
@@ -615,7 +648,7 @@ footer p {
   .project.single {
     align-items: flex-start;
     max-width: 1000px;
-  }
+  } */
 }
 
 @media print,
@@ -705,6 +738,14 @@ footer p {
     margin: 0;
     padding: 0;
     page-break-inside: avoid;
+  }
+  
+  #custom .project-image {
+    height: auto;
+  }
+
+  #controls {
+    display: none;
   }
 
   .social ul {
