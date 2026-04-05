@@ -449,11 +449,19 @@ nav ul li a:hover {
   pointer-events: auto;
 }
 
+#controls p {
+  width: 100%;
+}
+
 #controls button {
   background-color: var(--darker-primary-color);
   color: white;
   border-radius: 10px;
   width: 5rem;
+}
+
+#controls button.random {
+  background-color: var(--tertiary-color-1);
 }
 
 .project a:hover {

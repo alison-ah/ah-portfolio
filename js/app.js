@@ -112,6 +112,21 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') showIndex(index + 1);
 });
 
+// Random button
+const randomBtn = document.getElementById('random');
+
+function randomIndex() {
+  const len = options.length;
+  if (len <= 1) return 0;
+  let r;
+  do {
+    r = Math.floor(Math.random() * len);
+  } while (r === index && len > 1); // ensure different from current when possible
+  return r;
+}
+
+if (randomBtn) randomBtn.addEventListener('click', () => showIndex(randomIndex()));
+
 // init
 updateControlsVisibility();
 showIndex(0);
