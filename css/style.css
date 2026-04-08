@@ -130,7 +130,7 @@ a,
 input,
 textarea,
 select {
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   padding: 0.5rem;
 }
 
@@ -144,35 +144,6 @@ figure a {
   border: 2px solid transparent;
   padding: 0.5rem;
   display: flex;
-}
-
-/* Focus styles */
-
-:focus {
-  outline: 1px solid white; 
-  border: 3px solid var(--focus-outline-color);
-  padding: 0.5rem;
-}
-
-p a:focus {
-  padding: 0.2rem;
-  border: none;
-}
-
-/* Focus style for input fields */
-input:focus,
-textarea:focus,
-select:focus {
-  border: 2px solid var(--tertiary-color-2); /* Tertiary color for input focus */
-}
-
-/* Specific focus styles for links */
-a:focus {
-  text-decoration: underline;
-  outline: 3px solid var(--highlight-color);
-  border: 3px solid var(--highlight-color);   
-  border-radius: .5rem;
-  padding: .5rem;
 }
 
 h1 {
@@ -262,6 +233,53 @@ p.callout {
   gap: .8rem;
   list-style-type: none;
   padding-bottom: 1rem;
+}
+
+/* General focus styles */
+
+:focus {
+  outline: 1px solid white; 
+  border: 3px solid var(--focus-outline-color);
+  padding: 0.5rem;
+}
+
+/* Focus style for input fields */
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid var(--tertiary-color-2); /* Tertiary color for input focus */
+}
+
+/* Specific focus styles for links */
+a:focus {
+  text-decoration: underline;
+  outline: none;
+  border: 3px solid var(--highlight-color);   
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+p a:focus {
+  padding: 0.2rem;
+  border: none;
+  outline: 3px solid var(--highlight-color);
+}
+
+.project .single p a {
+  padding: 0.3rem;
+  border: none;
+  color: var(--tertiary-color-3);
+}
+.project .single p a:focus {
+  text-decoration: underline;
+  outline: 3px solid var(--highlight-color);
+  border: 3px solid var(--highlight-color);   
+  border-radius: .5rem;
+  padding: .2rem;
+}
+.project .single p a:focus {
+  padding: 0.1rem;
+  outline: 3px solid var(--highlight-color);
 }
 
 /*-- Header Styles --*/
@@ -584,26 +602,6 @@ footer p {
     width: 50%;
   }
 
-  /* #projects .content-wrapper.content {
-    padding: 0.1rem 1.5rem 1.5rem 1.5rem;
-  }
-
-  #project-descriptions.content-wrapper {
-    padding: 0.1rem 1.5rem 1.5rem 1.5rem;
-  }
-
-  #projects .intro {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-self: flex-start;
-  }
-
-  .project figure {
-    width: 80%;
-    max-width: 350px;
-    padding: 1rem 0 0 0;
-  } */
-
   .social ul {
     font-size: 3rem;
     gap: 1rem;
@@ -641,21 +639,6 @@ footer p {
     max-height: 450px;
   }
 
-  /* #projects .intro {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-self: flex-start;
-  }
-
-  .project figure {
-    width: 80%;
-    max-width: 400px;
-  }
-
-  .project.single {
-    align-items: flex-start;
-    max-width: 1000px;
-  } */
 }
 
 @media print,
@@ -693,6 +676,14 @@ footer p {
 
   a[href]::after {
     content: " (" attr(href) ")";
+  }
+
+  figure a[href] {
+    display: block;
+  }
+
+  figure img {
+    justify-self: center;
   }
 
   abbr[title]::after {
@@ -762,6 +753,22 @@ footer p {
 
   .project {
     border: none;
+  }
+
+  .project img {
+    width: 180px;
+    height: auto;
+  }
+
+  #copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    gap: 1rem;
+  }
+
+  footer p a {
+    display: none;
   }
 }
 }
