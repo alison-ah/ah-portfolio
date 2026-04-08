@@ -414,13 +414,16 @@ nav ul li a:hover {
   padding: 0.1rem 0 1.5rem;
 }
 
+#projects .content-wrapper {
+  padding: 0.1rem 0.1rem 1rem;
+}
+
 .project {
   border-radius: 25px;
   border: 2px solid var(--border-color);
   padding: 1rem 1rem;
   margin: auto;
   width: auto;
-  justify-self: center;
 }
 
 .description {
@@ -443,13 +446,14 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-#custom .project-image {
-  height: 685px;
-}
-
 .project img {
   outline: 2px solid white;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+article#custom {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 #controls {
@@ -605,7 +609,15 @@ footer p {
   .social ul {
     font-size: 3rem;
     gap: 1rem;
-  }  
+  }
+  
+  #projects .content-wrapper {
+    padding: 0.1rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  #custom .project-image {
+    height: 685px;
+  }
 
 }
 
@@ -632,6 +644,12 @@ footer p {
     display: flex;
     flex-wrap: wrap-reverse;
   }
+
+  article#custom {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
