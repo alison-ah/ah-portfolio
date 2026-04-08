@@ -400,6 +400,10 @@ nav ul li a:hover {
   margin-bottom: 0.5rem;
 }
 
+#projects .single h3 {
+  padding-top: 2rem;
+}
+
 #projects .content {
   justify-content: space-between;
   gap: 1rem;
@@ -646,6 +650,10 @@ footer p {
 
   article#custom {
     margin-top: 0rem;
+  }
+
+  #projects .single h3 {
+    padding-top: 0rem;
   }
 
 }
