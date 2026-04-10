@@ -1,13 +1,8 @@
 <h1>Portfolio Site</h1>
 <p>This portfolio site was created to showcase my web development skills, with a strong focus on clean code, responsive design, and digital accessibility best practices.</p>
 
-<p align="center">
-  <img src="img/alison-ah.github.io_ah-portfolio_.png" alt="Preview screenshot" width="45%" />
-</p>
-
 <h2>Acknowledgements</h2>
-<p>This site was originally developed as the final project of my Skillcrush Full Stack Development training, with guidance from their Get Hired program on best practices for portfolio content. It was later updated following the completion of their WordPress Development courses.</p>
-
+<p>This site was originally developed as the final project of my Skillcrush Full Stack Development training, with guidance from their Get Hired program on best practices for portfolio content. It has been updated several times since.</p>
 
 <p>Developed with portions of the HTML5 Boilerplate.</p>
 
