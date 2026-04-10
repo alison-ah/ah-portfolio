@@ -759,7 +759,6 @@ footer p {
   article.project {
     margin: 0;
     padding: 0;
-    page-break-inside: avoid;
   }
   
   #custom .project-image {
